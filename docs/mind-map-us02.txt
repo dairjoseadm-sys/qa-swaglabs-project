@@ -1,0 +1,25 @@
+US-02: Adicionar produto ao carrinho
+├── Pré-condições
+│   ├── Loja acessível
+│   ├── Cliente no catálogo/detalhe
+│   └── Produto disponível
+├── Fluxo principal
+│   ├── Selecionar produto
+│   ├── Acionar “Adicionar ao carrinho”
+│   └── Abrir carrinho e conferir item
+├── Dados
+│   ├── Nome do produto
+│   ├── Preço unitário
+│   ├── Quantidade
+│   └── Subtotal
+├── Cenários positivos
+│   ├── Item adicionado com sucesso
+│   └── Subtotal calculado corretamente
+├── Cenários negativos / limites
+│   ├── Produto indisponível (se aplicável)
+│   ├── Clique repetido / duplicidade (definir regra)
+│   └── Atualização da página e persistência (definir regra)
+└── Evidências e riscos
+    ├── Captura do catálogo e carrinho
+    ├── Divergência de preço ou quantidade
+    └── Item não aparece após adicionar
